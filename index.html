@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vitis — The World of Grapes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,wght@0,300;0,700;1,300&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@300;400;700&family=Abril+Fatface&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand nav-logo" href="#" onclick="showPage('home')">
+      <span class="grape-icon">🍇</span> VITIS
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item"><a class="nav-link nav-pill" href="#" onclick="showPage('home')">Home</a></li>
+        <li class="nav-item"><a class="nav-link nav-pill" href="#" onclick="showPage('varieties')">Varieties</a></li>
+        <li class="nav-item"><a class="nav-link nav-pill" href="#" onclick="showPage('wine')">Wine</a></li>
+        <li class="nav-item"><a class="nav-link nav-pill" href="#" onclick="showPage('health')">Health</a></li>
+        <li class="nav-item"><a class="nav-link nav-pill" href="#" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== PAGE: HOME ===================== -->
+<div id="page-home" class="page page-home">
+  <div class="home-hero">
+    <div class="hero-bg-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-eyebrow">Est. 6000 BCE · Ancient & Timeless</div>
+      <h1 class="hero-title">The World<br/><em>of Grapes</em></h1>
+      <p class="hero-sub">From ancient vineyards to modern tables — discover the lush, complex, and beautiful universe of Vitis vinifera.</p>
+      <div class="hero-cta-row">
+        <button class="btn-hero-primary" onclick="showPage('varieties')">Explore Varieties</button>
+        <button class="btn-hero-outline" onclick="showPage('wine')">Discover Wines</button>
+      </div>
+    </div>
+    <div class="hero-grape-cluster">
+      <div class="grape-bunch">
+        <div class="grape g1"></div><div class="grape g2"></div><div class="grape g3"></div>
+        <div class="grape g4"></div><div class="grape g5"></div><div class="grape g6"></div>
+        <div class="grape g7"></div><div class="grape g8"></div><div class="grape g9"></div>
+        <div class="grape g10"></div><div class="grape g11"></div><div class="grape g12"></div>
+        <div class="grape g13"></div><div class="grape g14"></div><div class="grape g15"></div>
+        <div class="grape-stem"></div>
+        <div class="grape-leaf leaf1"></div>
+        <div class="grape-leaf leaf2"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Strip -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-6 col-md-3 stat-item">
+          <div class="stat-num">10,000+</div>
+          <div class="stat-label">Grape Varieties</div>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <div class="stat-num">75%</div>
+          <div class="stat-label">Used for Wine</div>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <div class="stat-num">8,000</div>
+          <div class="stat-label">Years of History</div>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <div class="stat-num">180+</div>
+          <div class="stat-label">Countries Growing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature Cards -->
+  <div class="container home-features py-5">
+    <div class="section-label">What We Offer</div>
+    <h2 class="section-title">Explore Every Facet</h2>
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <div class="feature-card fc-dark" onclick="showPage('varieties')">
+          <div class="fc-icon">🍇</div>
+          <h3>Grape Varieties</h3>
+          <p>Cabernet, Merlot, Muscat and beyond — meet the most celebrated cultivars on earth.</p>
+          <span class="fc-arrow">→</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card fc-burgundy" onclick="showPage('wine')">
+          <div class="fc-icon">🍷</div>
+          <h3>Wine Culture</h3>
+          <p>How ancient fruit becomes liquid art — the science and romance of winemaking.</p>
+          <span class="fc-arrow">→</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card fc-green" onclick="showPage('health')">
+          <div class="fc-icon">💚</div>
+          <h3>Health & Nutrition</h3>
+          <p>Resveratrol, antioxidants, vitamins — the remarkable science behind the berry.</p>
+          <span class="fc-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quote Banner -->
+  <div class="quote-banner">
+    <div class="container text-center">
+      <blockquote>"Wine is sunlight, held together by water."<br/><cite>— Galileo Galilei</cite></blockquote>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PAGE: VARIETIES ===================== -->
+<div id="page-varieties" class="page page-varieties d-none">
+  <div class="varieties-hero">
+    <div class="container pt-5">
+      <div class="row align-items-center min-vh-50">
+        <div class="col-lg-6">
+          <p class="var-eyebrow">The Cultivar Collection</p>
+          <h1 class="var-title">Grape<br/>Varieties</h1>
+          <p class="var-sub">Over 10,000 varieties grown across the globe. Each with its own story, flavor, and soul.</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="var-orbs">
+            <div class="orb orb1">Cabernet</div>
+            <div class="orb orb2">Merlot</div>
+            <div class="orb orb3">Riesling</div>
+            <div class="orb orb4">Pinot</div>
+            <div class="orb orb5">Muscat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <!-- Filter Tabs -->
+    <div class="var-filter-row mb-4">
+      <button class="var-filter active" onclick="filterVariety('all', this)">All</button>
+      <button class="var-filter" onclick="filterVariety('red', this)">Red</button>
+      <button class="var-filter" onclick="filterVariety('white', this)">White</button>
+      <button class="var-filter" onclick="filterVariety('table', this)">Table</button>
+    </div>
+
+    <div class="row g-4" id="varietiesGrid">
+      <!-- Red -->
+      <div class="col-sm-6 col-lg-4 variety-item" data-type="red">
+        <div class="variety-card vc-red">
+          <div class="vc-header">
+            <span class="vc-badge red">Red</span>
+            <span class="vc-emoji">🍇</span>
+          </div>
+          <h3>Cabernet Sauvignon</h3>
+          <p class="vc-origin">France / Bordeaux</p>
+          <p class="vc-desc">The world's most planted red grape. Bold tannins, blackcurrant, cedar, and tobacco notes. Ages beautifully for decades.</p>
+          <div class="vc-flavor-tags">
+            <span>Blackcurrant</span><span>Cedar</span><span>Tobacco</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 variety-item" data-type="red">
+        <div class="variety-card vc-red">
+          <div class="vc-header">
+            <span class="vc-badge red">Red</span>
+            <span class="vc-emoji">🍇</span>
+          </div>
+          <h3>Merlot</h3>
+          <p class="vc-origin">France / Pomerol</p>
+          <p class="vc-desc">Soft, plummy and approachable. Rich with dark cherry, chocolate and subtle herbal tones. The world's second most planted grape.</p>
+          <div class="vc-flavor-tags">
+            <span>Plum</span><span>Chocolate</span><span>Herbs</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 variety-item" data-type="red">
+        <div class="variety-card vc-red">
+          <div class="vc-header">
+            <span class="vc-badge red">Red</span>
+            <span class="vc-emoji">🍇</span>
+          </div>
+          <h3>Pinot Noir</h3>
+          <p class="vc-origin">France / Burgundy</p>
+          <p class="vc-desc">Delicate, elegant, and notoriously difficult to grow. Red berry, earthy mushroom, and silky finesse define this legend.</p>
+          <div class="vc-flavor-tags">
+            <span>Red Berry</span><span>Earthy</span><span>Silky</span>
+          </div>
+        </div>
+      </div>
+      <!-- White -->
+      <div class="col-sm-6 col-lg-4 variety-item" data-type="white">
+        <div class="variety-card vc-white">
+          <div class="vc-header">
+            <span class="vc-badge white">White</span>
+            <span class="vc-emoji">🍀</span>
+          </div>
+          <h3>Chardonnay</h3>
+          <p class="vc-origin">France / Burgundy</p>
+          <p class="vc-desc">The queen of white grapes. Ranges from crisp citrus to rich buttery oak depending on terroir and winemaking style.</p>
+          <div class="vc-flavor-tags">
+            <span>Citrus</span><span>Butter</span><span>Oak</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 variety-item" data-type="white">
+        <div class="variety-card vc-white">
+          <div class="vc-header">
+            <span class="vc-badge white">White</span>
+            <span class="vc-emoji">🍀</span>
+          </div>
+          <h3>Riesling</h3>
+          <p class="vc-origin">Germany / Rhine</p>
+          <p class="vc-desc">Aromatic, high-acid, and food-friendly. From bone-dry to lusciously sweet, Riesling is among the world's most versatile grapes.</p>
+          <div class="vc-flavor-tags">
+            <span>Peach</span><span>Petrol</span><span>Honey</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 variety-item" data-type="white">
+        <div class="variety-card vc-white">
+          <div class="vc-header">
+            <span class="vc-badge white">White</span>
+            <span class="vc-emoji">🍀</span>
+          </div>
+          <h3>Sauvignon Blanc</h3>
+          <p class="vc-origin">France / Loire</p>
+          <p class="vc-desc">Zesty, grassy and tropical. Celebrated in Sancerre and Marlborough alike. Crisp acidity with herbaceous complexity.</p>
+          <div class="vc-flavor-tags">
+            <span>Lime</span><span>Grass</span><span>Tropical</span>
+          </div>
+        </div>
+      </div>
+      <!-- Table -->
+      <div class="col-sm-6 col-lg-4 variety-item" data-type="table">
+        <div class="variety-card vc-table">
+          <div class="vc-header">
+            <span class="vc-badge table">Table</span>
+            <span class="vc-emoji">🌿</span>
+          </div>
+          <h3>Thompson Seedless</h3>
+          <p class="vc-origin">USA / California</p>
+          <p class="vc-desc">The world's most popular table grape. Sweet, seedless, and juicy. Used for fresh eating, raisins, and neutral wines.</p>
+          <div class="vc-flavor-tags">
+            <span>Sweet</span><span>Juicy</span><span>Mild</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 variety-item" data-type="table">
+        <div class="variety-card vc-table">
+          <div class="vc-header">
+            <span class="vc-badge table">Table</span>
+            <span class="vc-emoji">🌿</span>
+          </div>
+          <h3>Muscat</h3>
+          <p class="vc-origin">Greece / Mediterranean</p>
+          <p class="vc-desc">One of the oldest cultivated grapes. Intensely floral and aromatic. Eaten fresh, dried into raisins, or made into fragrant dessert wines.</p>
+          <div class="vc-flavor-tags">
+            <span>Floral</span><span>Musky</span><span>Honey</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 variety-item" data-type="table">
+        <div class="variety-card vc-table">
+          <div class="vc-header">
+            <span class="vc-badge table">Table</span>
+            <span class="vc-emoji">🌿</span>
+          </div>
+          <h3>Concord</h3>
+          <p class="vc-origin">USA / Massachusetts</p>
+          <p class="vc-desc">A beloved North American grape with deep blue-black skin and a distinctive "foxy" flavor. Used in juices, jellies and fresh eating.</p>
+          <div class="vc-flavor-tags">
+            <span>Jammy</span><span>Earthy</span><span>Bold</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PAGE: WINE ===================== -->
+<div id="page-wine" class="page page-wine d-none">
+  <div class="wine-hero">
+    <div class="container">
+      <div class="row align-items-center" style="min-height:100vh; padding-top:80px">
+        <div class="col-lg-5">
+          <p class="wine-eyebrow">Liquid Art</p>
+          <h1 class="wine-title">The Art &<br/>Science of<br/><em>Wine</em></h1>
+          <p class="wine-sub">From vineyard to glass — an exploration of the world's most storied beverage, crafted for millennia.</p>
+          <button class="btn-wine" onclick="document.getElementById('wine-process').scrollIntoView({behavior:'smooth'})">See the Process ↓</button>
+        </div>
+        <div class="col-lg-7">
+          <div class="wine-bottles-display">
+            <div class="wine-bottle wb1">
+              <div class="bottle-body">
+                <div class="bottle-label">RED</div>
+              </div>
+              <div class="bottle-neck"></div>
+              <div class="bottle-top"></div>
+            </div>
+            <div class="wine-bottle wb2">
+              <div class="bottle-body">
+                <div class="bottle-label">ROSÉ</div>
+              </div>
+              <div class="bottle-neck"></div>
+              <div class="bottle-top"></div>
+            </div>
+            <div class="wine-bottle wb3">
+              <div class="bottle-body">
+                <div class="bottle-label">WHITE</div>
+              </div>
+              <div class="bottle-neck"></div>
+              <div class="bottle-top"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Winemaking Process -->
+  <div id="wine-process" class="wine-process-section">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <p class="wine-section-eyebrow">From Vine to Glass</p>
+        <h2 class="wine-section-title">The Winemaking Process</h2>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="ps-num">01</div>
+          <div class="ps-icon">🌱</div>
+          <h4>Cultivation</h4>
+          <p>Grapes grow on the vine for months, absorbing the unique characteristics of soil, climate, and care — the essence of terroir.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="ps-num">02</div>
+          <div class="ps-icon">🍇</div>
+          <h4>Harvest</h4>
+          <p>Harvested by hand or machine at peak ripeness. Timing is everything — it determines acidity, sugar and flavor concentration.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="ps-num">03</div>
+          <div class="ps-icon">⚗️</div>
+          <h4>Fermentation</h4>
+          <p>Yeast converts grape sugars into alcohol. Temperature, duration and vessel type all shape the wine's character and texture.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="ps-num">04</div>
+          <div class="ps-icon">🪵</div>
+          <h4>Aging</h4>
+          <p>Oak barrels or stainless steel tanks cradle the wine as it develops complexity, integrating tannins and deepening flavors.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="ps-num">05</div>
+          <div class="ps-icon">🍷</div>
+          <h4>Bottling</h4>
+          <p>The finished wine is clarified, blended if needed, and sealed — ready to continue evolving in the bottle or delight immediately.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wine Regions -->
+  <div class="wine-regions-section">
+    <div class="container py-5">
+      <h2 class="wine-region-title text-center mb-5">Great Wine Regions</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="region-card rc1">
+            <h4>🇫🇷 Bordeaux</h4>
+            <p>Home to legendary châteaux and the world's most collectible reds. Cabernet Sauvignon and Merlot reign supreme.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="region-card rc2">
+            <h4>🇮🇹 Tuscany</h4>
+            <p>Rolling hills and Sangiovese grapes produce Chianti, Brunello and the "Super Tuscans" that redefined Italian wine.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="region-card rc3">
+            <h4>🇪🇸 Rioja</h4>
+            <p>Spain's premier wine region, known for Tempranillo-based wines with vanilla, leather, and cherry complexity.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="region-card rc4">
+            <h4>🇩🇪 Mosel</h4>
+            <p>Steep slate riverbanks produce ethereal Rieslings — delicate, mineral, and incomparably elegant.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="region-card rc5">
+            <h4>🇺🇸 Napa Valley</h4>
+            <p>California's golden valley crafts opulent Cabernets and world-class Chardonnays under the warm Pacific sun.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="region-card rc6">
+            <h4>🇦🇷 Mendoza</h4>
+            <p>At the foot of the Andes, high-altitude Malbec flourishes into rich, velvety, internationally acclaimed wines.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PAGE: HEALTH ===================== -->
+<div id="page-health" class="page page-health d-none">
+  <!-- Hero -->
+  <div class="health-hero">
+    <div class="container">
+      <div class="row align-items-center" style="min-height:100vh; padding-top:80px">
+        <div class="col-lg-6">
+          <span class="health-badge">Science-Backed</span>
+          <h1 class="health-title">Grapes &<br/>Your Health</h1>
+          <p class="health-sub">Beyond their extraordinary taste, grapes are among nature's most powerful health foods — packed with antioxidants, vitamins, and bioactive compounds.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="health-visual">
+            <div class="hv-circle hvc1">
+              <span class="hv-icon">🫀</span>
+              <span>Heart<br/>Health</span>
+            </div>
+            <div class="hv-circle hvc2">
+              <span class="hv-icon">🧠</span>
+              <span>Brain<br/>Power</span>
+            </div>
+            <div class="hv-circle hvc3">
+              <span class="hv-icon">🛡️</span>
+              <span>Immune<br/>Boost</span>
+            </div>
+            <div class="hv-circle hvc4">
+              <span class="hv-icon">✨</span>
+              <span>Anti-<br/>aging</span>
+            </div>
+            <div class="hv-center">🍇</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nutrients -->
+  <div class="nutrients-section">
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="nutrients-title">Nutritional Profile</h2>
+        <p class="nutrients-sub">Per 100g of Red/Green Grapes</p>
+      </div>
+      <div class="nutrients-bars">
+        <div class="nutrient-row">
+          <span class="n-name">Calories</span>
+          <div class="n-bar-wrap"><div class="n-bar" style="width:34%" data-w="34%"><span>69 kcal</span></div></div>
+        </div>
+        <div class="nutrient-row">
+          <span class="n-name">Carbohydrates</span>
+          <div class="n-bar-wrap"><div class="n-bar nb2" style="width:62%" data-w="62%"><span>18g</span></div></div>
+        </div>
+        <div class="nutrient-row">
+          <span class="n-name">Vitamin C</span>
+          <div class="n-bar-wrap"><div class="n-bar nb3" style="width:18%" data-w="18%"><span>18% DV</span></div></div>
+        </div>
+        <div class="nutrient-row">
+          <span class="n-name">Vitamin K</span>
+          <div class="n-bar-wrap"><div class="n-bar nb4" style="width:28%" data-w="28%"><span>28% DV</span></div></div>
+        </div>
+        <div class="nutrient-row">
+          <span class="n-name">Potassium</span>
+          <div class="n-bar-wrap"><div class="n-bar nb5" style="width:22%" data-w="22%"><span>191mg</span></div></div>
+        </div>
+        <div class="nutrient-row">
+          <span class="n-name">Antioxidants</span>
+          <div class="n-bar-wrap"><div class="n-bar nb6" style="width:85%" data-w="85%"><span>Very High</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Benefits -->
+  <div class="benefits-section">
+    <div class="container py-5">
+      <h2 class="benefits-title text-center mb-5">Key Health Benefits</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card">
+            <div class="bc-top">
+              <span class="bc-icon">🫀</span>
+              <h4>Cardiovascular Health</h4>
+            </div>
+            <p>Resveratrol and flavonoids in grapes reduce LDL cholesterol, improve arterial flexibility and lower blood pressure — protecting your heart naturally.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card">
+            <div class="bc-top">
+              <span class="bc-icon">🧠</span>
+              <h4>Cognitive Function</h4>
+            </div>
+            <p>Polyphenols protect neurons from oxidative damage and may reduce the risk of Alzheimer's and age-related cognitive decline.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card">
+            <div class="bc-top">
+              <span class="bc-icon">🛡️</span>
+              <h4>Cancer Prevention</h4>
+            </div>
+            <p>Resveratrol, quercetin and other polyphenols have shown anti-cancer properties in studies, inhibiting tumor growth and cell mutation.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card">
+            <div class="bc-top">
+              <span class="bc-icon">😴</span>
+              <h4>Better Sleep</h4>
+            </div>
+            <p>Grapes are a natural source of melatonin, the sleep-regulating hormone, helping improve sleep quality and circadian rhythm.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card">
+            <div class="bc-top">
+              <span class="bc-icon">🌿</span>
+              <h4>Gut Health</h4>
+            </div>
+            <p>Rich in fiber and polyphenols that act as prebiotics — feeding beneficial gut bacteria and promoting a healthy digestive microbiome.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-card">
+            <div class="bc-top">
+              <span class="bc-icon">✨</span>
+              <h4>Skin & Anti-Aging</h4>
+            </div>
+            <p>Grape seed extract and skin polyphenols fight free radicals, stimulate collagen production, and protect against UV damage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PAGE: CONTACT ===================== -->
+<div id="page-contact" class="page page-contact d-none">
+  <div class="contact-bg">
+    <div class="contact-grid-overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center align-items-center" style="min-height:100vh; padding-top:80px">
+        <div class="col-lg-10">
+          <div class="contact-wrapper">
+            <div class="row g-0">
+              <div class="col-lg-5 contact-left">
+                <div class="cl-inner">
+                  <p class="contact-eyebrow">Get In Touch</p>
+                  <h2 class="contact-title">Let's Talk<br/>Grapes</h2>
+                  <p class="contact-tagline">Whether you're a wine lover, grower, or just curious — we'd love to hear from you.</p>
+                  <div class="contact-info-items mt-4">
+                    <div class="ci-item">
+                      <span class="ci-icon">📍</span>
+                      <span>Vineyard Lane, Burgundy, France</span>
+                    </div>
+                    <div class="ci-item">
+                      <span class="ci-icon">📧</span>
+                      <span>hello@vitis.world</span>
+                    </div>
+                    <div class="ci-item">
+                      <span class="ci-icon">📞</span>
+                      <span>+33 1 23 45 67 89</span>
+                    </div>
+                  </div>
+                  <div class="contact-social mt-4">
+                    <a href="#" class="cs-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="cs-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="cs-link"><i class="fab fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 contact-right">
+                <div class="cr-inner">
+                  <h3 class="form-title">Send a Message</h3>
+                  <div class="contact-form">
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <div class="cf-group">
+                          <label>First Name</label>
+                          <input type="text" class="cf-input" placeholder="Jean"/>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="cf-group">
+                          <label>Last Name</label>
+                          <input type="text" class="cf-input" placeholder="Dupont"/>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="cf-group">
+                          <label>Email Address</label>
+                          <input type="email" class="cf-input" placeholder="you@domain.com"/>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="cf-group">
+                          <label>Subject</label>
+                          <select class="cf-input cf-select">
+                            <option>General Inquiry</option>
+                            <option>Wine Consultation</option>
+                            <option>Vineyard Tour</option>
+                            <option>Press & Media</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="cf-group">
+                          <label>Your Message</label>
+                          <textarea class="cf-input cf-textarea" rows="4" placeholder="Tell us about your interest in grapes..."></textarea>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn-send" onclick="sendMessage()">Send Message <span>✈</span></button>
+                        <div id="contactSuccess" class="contact-success d-none">
+                          ✅ Message sent! We'll be in touch soon.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
+        <span class="footer-logo">🍇 VITIS</span>
+      </div>
+      <div class="col-md-4 text-center mb-2 mb-md-0">
+        <span class="footer-tagline">The World of Grapes</span>
+      </div>
+      <div class="col-md-4 text-center text-md-end">
+        <span class="footer-copy">© 2025 Vitis. All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
